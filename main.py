@@ -1,6 +1,6 @@
 
 from flask import Flask, jsonify, render_template, request
-from Sales_data.utils import SalesData
+from sales_data.utils import SalesData
 import config
 
 app = Flask(__name__)
