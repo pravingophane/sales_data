@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Product of Specific Outlet Prediction</title>
+</head>
+
+<body style="background-color: rgb(105, 104, 105);">
+
+    <h1> Sales Product of Specific Outlet Prediction </h1>
+    <form method="GET" action="/predict_sales">
+
+        <label>Item_Weight:</label>
+        <input type = "text" name = "Item_Weight">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Item_Fat_Content:</label>
+        <select name = "Item_Fat_Content">
+            <option value = "Low Fat">Low Fat</option>
+            <option value = "Regular">Regular</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Item_Visibility:</label>
+        <input type = "text" name = "Item_Visibility">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Item_MRP:</label>
+        <input type = "text" name = "Item_MRP">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Outlet_Establishment_Year:</label>
+        <select name = "Outlet_Establishment_Year">
+            <option value = "1985">1985</option>
+            <option value = "1987">1987</option>
+            <option value = "1997">1997</option>
+            <option value = "1998">1998</option>
+            <option value = "1999">1999</option>
+            <option value = "2002">2002</option>
+            <option value = "2004">2004</option>
+            <option value = "2007">2007</option>
+            <option value = "2009">2009</option>
+
+        </select>
+
+        <br>
+        <br>
+
+        <label>Outlet_Size:</label>
+        <label>Medium:</label> <input type = "radio" name= "Outlet_Size" value = "Medium">
+        <label>Small:</label> <input type = "radio" name= "Outlet_Size" value = "Small">
+        <label>High:</label> <input type = "radio" name= "Outlet_Size" value = "High">
+
+
+        <br>
+        <br>
+
+        <label>Outlet_Location_Type:</label>
+        <label>Tier 1:</label> <input type = "radio" name= "Outlet_Location_Type" value = "Tier 1">
+        <label>Tier 2:</label> <input type = "radio" name= "Outlet_Location_Type" value = "Tier 2">
+        <label>Tier 3:</label> <input type = "radio" name= "Outlet_Location_Type" value = "Tier 3">
+
+        <br>
+        <br>
+
+        <label>Item_Type:</label>
+        <select name = "Item_Type">
+            <option value = "Baking Goods">Baking Goods</option>
+            <option value = "Breads">Breads</option>
+            <option value = "Breakfast">Breakfast</option>
+            <option value = "Canned">Canned</option>
+            <option value = "Dairy">Dairy</option>
+            <option value = "Frozen Foods">Frozen Foods</option>
+            <option value = "Fruits and Vegetables">Fruits and Vegetables</option>
+            <option value = "Hard Drinks">Hard Drinks</option>
+            <option value = "Health and Hygiene">Health and Hygiene</option>
+            <option value = "Household">Household</option>
+            <option value = "Meat">Meat</option>
+            <option value = "Others">Others</option>
+            <option value = "Seafood">Seafood</option>
+            <option value = "Snack Foods">Snack Foods</option>
+            <option value = "Soft Drinks">Soft Drinks</option>
+            <option value = "Starchy Foods">Starchy Foods</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Outlet_Type:</label>
+        <select name = "Outlet_Type">
+            <option value = "Grocery Store">Grocery Store</option>
+            <option value = "Supermarket Type1">Supermarket Type1</option>
+            <option value = "Supermarket Type2">Supermarket Type2</option>
+            <option value = "Supermarket Type2">Supermarket Type2</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>Sales product of specific outlet will be <b> {{ prediction }} /- Rs.</b> Only </p>
+
+
+    </form>
+
+
+</body>
+</html>
